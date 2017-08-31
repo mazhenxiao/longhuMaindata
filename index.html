@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="/content/css/default-min.css" />
+    <link rel="stylesheet" href="/content/css/main.css" />
+</head>
+<body>
+    <article class="container-fluid">
+        <header class="w1300 containerHeader">
+                <p class="text-right">
+                    <button class="btn btn-default icon-list active">项目列表</button>
+                    <button class="btn btn-default icon-notepad mgL30">报表管理</button>
+                    <button class="btn btn-default icon-time mgL30">代办</button>
+                </p>
+        </header>
+        <section class="w1300 oh contentBox">
+            <article class="contentLeftBox">
+                <div class="contLeftMenu">
+                    <ul>
+                        <li class="iss-estate active"><a href="javascript:;">地产</a></li>
+                        <li class="iss-business"><a href="javascript:;">商业</a></li>
+                        <li class="iss-apratment"><a href="javascript:;">冠寓</a></li>
+                    </ul>                   
+                </div>
+                <div class="contLeftList">
+                   <!-- header{地产项目}>p>input^div>ul -->
+                   <isssearch></isssearch>
+                </div>  
+            </article>
+            <article class="contentRightBox">
+                <div class="contentRightBoxTen">
+                        <header></header>
+                        <section class="contentView" id="contentView">
+                            <router-view></router-view>
+                        </section>
+                </div>
+            </article>
+        </section>
+    </article>
+  
+    <!-- 页面js加载 -->
+  <script src="/content/js/all0.0.1-min.js"></script><!--压缩 jquery bootstrap esayui underscore jqueryvalidy vue vue-router -->
+   <script src="/content/dist/js/chunk-build.js"></script>
+  <script src="/content/dist/js/index-build.js"></script>
+</body>
+</html>
